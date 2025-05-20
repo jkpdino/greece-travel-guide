@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greece Trip Picks - Hellenic Edition</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+  <style>
+    :root {
+      --terracotta: #c8553d;
+      --sand: #f5edd6;
+      --olive: #626c45;
+      --aegean: #3d7c8a;
+      --stone: #d9d0c1;
+      --dark-stone: #8a8070;
+      --black-olive: #32342d;
+      --gold: #bda06f; 
+    }
+    
+    html {
+      background-color: var(--stone); 
+    }
+
+    body {
+      font-family: 'Lora', serif;
+      line-height: 1.6; 
+      margin: 0 auto; 
+      padding: 0; 
+      background-color: var(--sand);
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d9d0c1' fill-opacity='0.2' fill-rule='evenodd'/%3E%3C/svg%3E");
+      color: var(--black-olive);
+      padding: 20px; 
+      max-width: 1200px;
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      color: var(--terracotta);
+      text-align: center;
+      text-transform: uppercase; 
+      margin-top: 0;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--terracotta);
+      letter-spacing: 1.5px; 
+      position: relative;
+      margin-bottom: 30px; 
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: -12px; 
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%; 
+      max-width: 200px; 
+      height: 8px; 
+      background-image: url("data:image/svg+xml,%3Csvg width='32' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h32v2H4v2h24v2H4v2H0V0z' fill='%23c8553d' fill-opacity='0.7'/%3E%3C/svg%3E");
+      background-repeat: repeat-x;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px; 
+    }
+
+    .site-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.8rem; 
+      color: var(--terracotta); 
+      margin: 0;
+      letter-spacing: 2.5px; 
+      text-transform: uppercase;
+      position: relative;
+      display: inline-block;
+      padding: 0 70px; 
+    }
+
+    .site-title::before, .site-title::after {
+      content: "•"; 
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem; 
+      color: var(--gold); 
+      line-height: 1;
+    }
+
+    .site-title::before {
+      left: 30px;
+    }
+
+    .site-title::after {
+      right: 30px;
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: var(--dark-stone);
+      margin-top: 10px; 
+      font-size: 1.1rem;
+    }
+
+    .tabs {
+      list-style: none;
+      display: flex;
+      margin: 0 0 0 0; 
+      padding: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px; 
+    }
+
+    .tabs li {
+      padding: 15px 25px; 
+      cursor: pointer;
+      background: var(--stone);
+      user-select: none;
+      font-family: 'Cinzel', serif;
+      text-align: center;
+      min-width: 120px;
+      color: var(--black-olive);
+      transition: all 0.3s ease;
+      border-top: 1px solid var(--dark-stone); 
+      border-left: 1px solid var(--dark-stone);
+      border-right: 1px solid var(--dark-stone);
+      border-bottom: 1px solid var(--dark-stone); 
+      border-radius: 6px 6px 0 0; 
+      margin: 0 2px; 
+      position: relative;
+      bottom: -1px; 
+    }
+    
+    .tabs li::before, .tabs li::after {
+      content: none;
+    }
+
+    .tabs li.active {
+      background: var(--terracotta); 
+      color: var(--sand);
+      font-weight: 700; 
+      border-bottom-color: var(--terracotta); 
+      z-index: 1; 
+    }
+    
+    .tabs li:not(.active):hover {
+      background: var(--olive);
+      color: var(--sand);
+      border-color: var(--olive);
+      border-bottom-color: var(--olive);
+    }
+
+    .tab-content {
+      display: none;
+      padding: 30px;
+      background: var(--sand); 
+      border: 1px solid var(--dark-stone); 
+      border-top: 5px solid var(--terracotta); 
+      margin-bottom: 30px; 
+    }
+
+    .tab-content::before, .tab-content::after {
+     content: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px; /* Added margin-top for spacing from content above */
+      margin-bottom: 20px;
+      background-color: var(--sand); 
+      border: 1px solid var(--dark-stone);
+    }
+
+    th, td {
+      padding: 12px 15px;
+      vertical-align: top;
+      border: 1px solid var(--dark-stone);
+      text-align: left; 
+    }
+
+    th {
+      background: var(--terracotta); 
+      color: var(--sand);
+      width: 150px; 
+      font-family: 'Cinzel', serif;
+      font-weight: 600; 
+      letter-spacing: 1px;
+    }
+
+    td {
+      background-color: var(--sand); 
+    }
+
+    .column-left, .column-right {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 30px; 
+      background-image: url("data:image/svg+xml,%3Csvg width='30' height='60' viewBox='0 0 30 60' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='4' y='0' width='4' height='60' fill='%238A8070' opacity='0.3'/%3E%3Crect x='13' y='0' width='4' height='60' fill='%238A8070' opacity='0.3'/%3E%3Crect x='22' y='0' width='4' height='60' fill='%238A8070' opacity='0.3'/%3E%3C/svg%3E");
+      background-repeat: repeat-y;
+      z-index: -1; 
+    }
+
+    .column-left {
+      left: 10px; 
+    }
+
+    .column-right {
+      right: 10px; 
+    }
+
+    /* NEW CSS for added content */
+    .section-dates {
+      font-family: 'Cinzel', serif;
+      text-align: center;
+      color: var(--olive);
+      font-size: 1.2rem; /* Slightly larger for prominence */
+      font-weight: 600;
+      margin-top: -15px; /* Pull up closer to H2 */
+      margin-bottom: 25px;
+    }
+
+    .section-intro {
+      margin-bottom: 25px;
+      border-left: 3px solid var(--gold); /* Decorative left border */
+      padding-left: 15px;
+    }
+    .section-intro p {
+      margin-bottom: 10px;
+    }
+    .section-intro p strong {
+        font-family: 'Cinzel', serif;
+        color: var(--black-olive);
+        font-weight: 600;
+    }
+
+    .subsection-title {
+      font-family: 'Cinzel', serif;
+      color: var(--olive); 
+      font-weight: 700; /* Bolder subsection title */
+      letter-spacing: 1.2px;
+      margin-top: 35px;
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--dark-stone);
+      text-transform: uppercase;
+      font-size: 1.5rem; /* Larger and more distinct */
+    }
+    .subsection-title:first-of-type { 
+        margin-top: 25px;
+    }
+
+    .tab-content ul, .tab-content ol {
+      padding-left: 30px; /* More indentation for lists */
+      margin-bottom: 25px; 
+    }
+    .tab-content ul li, .tab-content ol li {
+      margin-bottom: 10px; /* Increased spacing between list items */
+      line-height: 1.7; 
+    }
+    .tab-content ul {
+      list-style-type: '🏺 '; /* Custom bullet - a simple amphora emoji for thematic touch */
+    }
+    .tab-content ol {
+      list-style-type: decimal;
+    }
+    
+    .general-note {
+        font-family: 'Lora', serif;
+        font-style: italic;
+        text-align: center;
+        color: var(--black-olive);
+        margin-top: 40px;
+        padding: 20px;
+        background-color: var(--stone); 
+        border: 1px solid var(--dark-stone);
+        border-radius: 4px;
+        line-height: 1.7;
+    }
+    /* END NEW CSS */
+
+    @media (max-width: 768px) {
+      body {
+        padding: 10px; 
+      }
+      .tabs {
+        flex-direction: column;
+      }
+      
+      .tabs li {
+        width: 100%;
+        margin-bottom: 5px;
+        border-radius: 4px; 
+        bottom: 0; 
+      }
+      
+      .tabs li.active {
+        border-bottom-color: var(--dark-stone); 
+      }
+      
+      .column-left, .column-right {
+        display: none; 
+      }
+      
+      .tab-content {
+        padding: 20px 15px;
+        border-top: 3px solid var(--terracotta); 
+      }
+      
+      th, td {
+        padding: 10px 8px; 
+      }
+      th {
+        width: 100px; 
+      }
+      .site-title {
+        font-size: 2rem;
+        padding: 0 40px;
+      }
+      .site-title::before { left: 10px; font-size: 1.5rem;}
+      .site-title::after { right: 10px; font-size: 1.5rem;}
+
+      .section-dates { font-size: 1rem; margin-bottom: 20px;}
+      .subsection-title { font-size: 1.2rem; margin-top: 25px; margin-bottom: 15px;}
+      .tab-content ul, .tab-content ol { padding-left: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="column-left"></div>
+  <div class="column-right"></div>
+
+  <div class="header">
+    <h1 class="site-title">Greece Trip Picks</h1>
+    <p class="subtitle">Journey through the land of gods and heroes</p>
+  </div>
+
+  <ul class="tabs" id="tabs">
+    <li class="active" data-tab="athens">Athens & Attica</li>
+    <li data-tab="delphi">Delphi & Parnassus</li>
+    <li data-tab="olympia">Peloponnese</li>
+    <li data-tab="nafplio">Nafplio Hub</li>
+    <li data-tab="corinth">Corinth & Return</li>
+  </ul>
+
+  <!-- Athens -->
+  <section id="athens" class="tab-content active">
+    <h2>Athens & Attica Picks</h2>
+    <p class="section-dates">(23–24 May)</p>
+
+    <div class="section-intro">
+      <p><strong>Vibe:</strong> Large capital; fast, noisy, modern blocks wrapped around ancient landmarks.</p>
+      <p><strong>Planned Core:</strong> Cape Sounion, Acropolis, Ancient Agora, Theater of Dionysos, National Archaeological Museum.</p>
+      <p><strong>Free Time:</strong> ≈ 9 h total (23 May 14:30-19:30, 24 May 14:00-19:00).</p>
+    </div>
+    
+    <h3 class="subsection-title">Extra Options During Free Time</h3>
+    <ul>
+      <li>Benaki Museum (modern Greek culture)</li>
+      <li>Lycabettus funicular + summit trail</li>
+      <li>Panathenaic Stadium track lap</li>
+      <li>Psyrri mezé-and-bar crawl</li>
+      <li>Varvakios central market food hunt</li>
+      <li>Flisvos Marina seafront path</li>
+      <li>Street-art walk in Exarchia</li>
+      <li>Roof-top drink at Couleur Locale or A-for-Athens</li>
+    </ul>
+
+    <table>
+      <tr><th>Food</th><td>Strofi rooftop; Kostas souvlaki; Psyrri mezé crawl</td></tr>
+      <tr><th>Nature</th><td>Mt Lycabettus sunset walk; National Garden jog</td></tr>
+      <tr><th>Tourism</th><td>Panathenaic Stadium; Benaki Museum</td></tr>
+      <tr><th>Relaxation</th><td>Coffee in Anafiotika; Flisvos Marina loungers</td></tr>
+      <tr><th>History</th><td>Kerameikos cemetery; Temple of Poseidon at Sounion</td></tr>
+      <tr><th>Shopping</th><td>Ermou Street; Monastiraki flea market</td></tr>
+    </table>
+
+    <h3 class="subsection-title">Athens & Attica — 15 Flexible Ideas</h3>
+    <ol>
+      <li>Early-entry Acropolis & Parthenon circuit</li>
+      <li>Plaka + Anafiotika photo walk</li>
+      <li>Rooftop dinner at <em>Strofi</em> with night-lit ruins</li>
+      <li>Benaki Museum (modern Greek culture)</li>
+      <li>Lycabettus funicular and dusk lookout hike</li>
+      <li>Taste tour of Varvakios Central Market</li>
+      <li>Street-art hunt through Psyrri & Exarchia</li>
+      <li>Kolonaki coffee + designer boutiques on Voukourestiou St</li>
+      <li>Sunset at Cape Sounion, Temple of Poseidon</li>
+      <li>Lap the marble Panathenaic Stadium track</li>
+      <li>Picnic in the National Garden</li>
+      <li>Evening stroll along Flisvos Marina & Battleship <em>Averof</em></li>
+      <li>Stavros Niarchos Cultural Center park & opera views</li>
+      <li>Seafood mezé at Zea Marina, Piraeus</li>
+      <li>Late-night bars and clubs in Gazi district</li>
+    </ol>
+  </section>
+
+  <!-- Delphi -->
+  <section id="delphi" class="tab-content">
+    <h2>Delphi & Mt Parnassus Picks</h2>
+    <p class="section-dates">(25–26 May)</p>
+
+    <div class="section-intro">
+      <p><strong>Vibe:</strong> Mountain village overlooking an “olive-sea”; quieter, cooler air, spiritual undertone.</p>
+      <p><strong>Planned Core:</strong> Hosios Loukas monastery, Delphi sanctuary + museum, optional Mt Parnassus sunrise hike.</p>
+      <p><strong>Free Time:</strong> ≈ 8 h (25 May 17:00-20:00, 26 May 14:00-19:00).</p>
+    </div>
+
+    <h3 class="subsection-title">Extra Options During Free Time</h3>
+    <ul>
+      <li>Corycian Cave half-day excursion</li>
+      <li>Olive-oil tasting at Chrisso co-op</li>
+      <li>E4 footpath to Delphi spring</li>
+      <li>Spa soak at Kalitea Loutra (Arachova)</li>
+      <li>Balcony cafés for Gulf sunset</li>
+      <li>Mountain-bike rental on Parnassus trails</li>
+      <li>Shop carved olive-wood icons and fir-tree liqueur</li>
+    </ul>
+
+    <table>
+      <tr><th>Food</th><td>To Patriko Mas; Chrisso co‑op for feta & honey</td></tr>
+      <tr><th>Nature</th><td>Mt Parnassus dawn trek; E4 trail spring above Delphi</td></tr>
+      <tr><th>Tourism</th><td>Olive‑oil tasting at Mer des Oliviers; Corycian Cave excursion</td></tr>
+      <tr><th>Relaxation</th><td>Spa soak at Kalitea Loutra; Balcony ouzo sundowner</td></tr>
+      <tr><th>History</th><td>Sanctuary of Apollo; Hosios Loukas mosaics</td></tr>
+      <tr><th>Shopping</th><td>Olive‑wood icons; Fir‑tree liqueur bottles</td></tr>
+    </table>
+
+    <h3 class="subsection-title">Delphi & Mt Parnassus — 15 Flexible Ideas</h3>
+    <ol>
+      <li>Sunrise hike to Mt Parnassus summit</li>
+      <li>Half-day trek to Corycian Cave</li>
+      <li>Olive-oil tasting at Chrisso co-op press</li>
+      <li>Arachova village for wool rugs & espresso</li>
+      <li>Spa soak at Kalitea Loutra springs</li>
+      <li>Horseback ride on Parnassus forest trails</li>
+      <li>Short E4 path to Kastalia spring & Tholos lookout</li>
+      <li>Mountain-bike rental on ski-resort fire roads</li>
+      <li>Feast on mountain <em>kontosouvli</em> at a roadside taverna</li>
+      <li>Sketch Delphi artifacts from museum terrace</li>
+      <li>Gulf-of-Corinth bird-watching viewpoint</li>
+      <li>Buy fir-tree liqueur from roadside stalls</li>
+      <li>Sunset wine on a Delphi balcony bar</li>
+      <li>Stargazing session—dark sky, bring binoculars</li>
+      <li>Stop at Distomo WWII memorial en-route</li>
+    </ol>
+  </section>
+
+  <!-- Olympia / Peloponnese -->
+  <section id="olympia" class="tab-content">
+    <h2>Western Peloponnese (Patras & Olympia) Picks</h2>
+    <p class="section-dates">(27–28 May)</p>
+
+    <div class="section-intro">
+      <p><strong>Vibe:</strong> Rural farmland, citrus groves, and river valleys; loose, agricultural rhythm.</p>
+      <p><strong>Planned Core:</strong> St Andrew Basilica, Olympia archaeological site, museum, traditional Greek-dance dinner.</p>
+      <p><strong>Free Time:</strong> ≈ 3 h (27 May 18:00-21:00).</p>
+    </div>
+
+    <h3 class="subsection-title">Extra Options During Free Time</h3>
+    <ul>
+      <li>Achaia Clauss winery tour (Patras)</li>
+      <li>Honey-farm demo and tasting</li>
+      <li>Riverside walk along Kladeos</li>
+      <li>Beach break at Kyllini dunes</li>
+      <li>Sunset paddle-board on Kaiafas Lake</li>
+      <li>Local pottery workshop in Olympia town</li>
+      <li>Olive-wood carving studio visit</li>
+    </ul>
+
+    <table>
+      <tr><th>Food</th><td>Patras Old Port seafood; Taverna Orestis farm‑to‑table</td></tr>
+      <tr><th>Nature</th><td>Kladeos riverside walk; Sunset at Kaiafas Lake</td></tr>
+      <tr><th>Tourism</th><td>Achaia Clauss winery tour; Honey farm visit</td></tr>
+      <tr><th>Relaxation</th><td>Kyllini sand‑dune beach; Hotel pool downtime</td></tr>
+      <tr><th>History</th><td>Ancient Olympia site & museum</td></tr>
+      <tr><th>Shopping</th><td>Olive‑wood bowls; Olive‑oil soaps</td></tr>
+    </table>
+
+    <h3 class="subsection-title">Western Peloponnese (Patras & Olympia) — 15 Flexible Ideas</h3>
+    <ol>
+      <li>Wine tour at Achaia Clauss (taste Mavrodaphne)</li>
+      <li>Explore Patras Roman Odeon & lighthouse pier</li>
+      <li>Street-food crawl on Agiou Nikolaou steps</li>
+      <li>Swim & hot-springs soak on Kyllini dunes</li>
+      <li>Sunset kayak on Kaiafas Lake</li>
+      <li>Honey-farm visit with thyme-honey tasting</li>
+      <li>Wheel-thrown pottery lesson in Olympia village</li>
+      <li>Sprint the 200 m ancient Olympic track</li>
+      <li>Riverside picnic under Kladeos plane trees</li>
+      <li>Guided tour of Olympia Museum highlights</li>
+      <li>Half-day boat from Kyllini to Zakynthos Blue Caves</li>
+      <li>Vineyard cycling loop outside Patras</li>
+      <li>Sample <em>pasteli</em> sesame bars at local confectioner</li>
+      <li>Climb Patras Castle ramparts at golden hour</li>
+      <li>Bouzouki-backed folk-dance night (hotel courtyard)</li>
+    </ol>
+  </section>
+
+  <!-- Nafplio -->
+  <section id="nafplio" class="tab-content">
+    <h2>Nafplio Hub Picks</h2>
+    <p class="section-dates">(28 May PM – 1 Jun AM)</p>
+
+    <div class="section-intro">
+      <p><strong>Vibe:</strong> Seaside Venetian old-town; polished, romantic, café culture, walkable promenades.</p>
+      <p><strong>Planned Core:</strong> Mycenae citadel, Epidaurus theatre, Hydra & Spetses cruise, Corinth + Acrocorinth return leg.</p>
+      <p><strong>Free Time:</strong> ≈ 25 h (28 May 18:00-late; full 30 May; 31 May 19:30-late).</p>
+    </div>
+
+    <h3 class="subsection-title">Extra Options During Free Time</h3>
+    <ul>
+      <li>Palamidi Fortress 857-step climb</li>
+      <li>Sea-kayak under Akronafplia walls</li>
+      <li>Beaches: Tolo (shallow) or Karathona (long sand)</li>
+      <li>Nemea Agiorgitiko wine circuit (half-day)</li>
+      <li>Arvanitia coastal walk + sunset swim</li>
+      <li>Komboloi Museum + bead-making demo</li>
+      <li>Farmers’ market (Sat 07:00-13:00)</li>
+      <li>Cycling loop to Tiryns ruins</li>
+      <li>Evening gelato crawl (Antica, Gelateria di Roma)</li>
+    </ul>
+    
+    <table>
+      <tr><th>Food</th><td>Antica Gelateria di Roma gelato; Savouras seafood; Nemea Agiorgitiko tasting rooms</td></tr>
+      <tr><th>Nature</th><td>Palamidi Fortress climb; Tolo/Karathona beach time; Sea‑kayak under Akronafplia walls</td></tr>
+      <tr><th>Tourism</th><td>Hydra harbour stroll; Spetses horse‑car loop</td></tr>
+      <tr><th>Relaxation</th><td>Arvanitia coastal promenade; Café hopping around Syntagma Square</td></tr>
+      <tr><th>History</th><td>Mycenae citadel; Theatre of Epidaurus; Nafplio Archaeological Museum</td></tr>
+      <tr><th>Shopping</th><td>Komboloi worry‑beads; Leather sandals & linen; Hydra sponges; Spetses espadrilles</td></tr>
+    </table>
+
+    <h3 class="subsection-title">Nafplio Hub (incl. Mycenae, Epidaurus, Hydra, Spetses) — 15 Flexible Ideas</h3>
+    <ol>
+      <li>Dawn climb of 857-step Palamidi Fortress</li>
+      <li>Sea-kayak beneath Akronafplia & around Bourtzi islet</li>
+      <li>Swim / sun at Karathona or Tolo beaches</li>
+      <li>Half-day Nemea winery circuit (Agiorgitiko reds)</li>
+      <li>Evening gelato crawl—Antica, Blublanc, Koustenis</li>
+      <li>Hike to Profitis Elias chapel for sunset views</li>
+      <li>Komboloi (worry-bead) workshop & museum visit</li>
+      <li>Saturday farmers’ market for cheese & fruit</li>
+      <li>Cycle flat route to Tiryns Mycenaean fortress</li>
+      <li>Short yacht charter in the Argolic Gulf</li>
+      <li>Folklore Museum (costumes & shadow puppets)</li>
+      <li>Old-town cooking class—make <em>gemista</em> & <em>baklava</em></li>
+      <li>Horse-carriage island tour on Spetses (cruise stop)</li>
+      <li>Donkey trail up to Hydra’s Profit Ilias monastery</li>
+      <li>Summer concert in Epidaurus Little Theatre</li>
+    </ol>
+  </section>
+
+  <!-- Corinth -->
+  <section id="corinth" class="tab-content">
+    <h2>Corinth & Return Picks</h2>
+    <p class="section-dates">(1 Jun)</p>
+
+    <div class="section-intro">
+      <p><strong>Vibe:</strong> Industrial corridor with dramatic canal cut; hill-top medieval fort.</p>
+      <p><strong>Planned Core:</strong> Corinth Canal view, Ancient Corinth, Acrocorinth hike, airport departure.</p>
+      <p><strong>Free Time:</strong> ≈ 2 h (airport post-check-in).</p>
+    </div>
+
+    <h3 class="subsection-title">Extra Options During Free Time</h3>
+    <ul>
+      <li>Isthmus Canal pedestrian bridge photo stop</li>
+      <li>Archaeological Museum of Ancient Corinth (1 h)</li>
+      <li>Quick dip at Kalamaki beach (15 min south)</li>
+      <li>Duty-free shopping: Korres skincare, Metaxa 12-Star, olive-oil gift packs</li>
+      <li>Aegean Club or Gold Lounge downtime</li>
+    </ul>
+
+    <table>
+      <tr><th>Food</th><td>Grilled lamb at Perama; Loukoumades near Isthmus Canal</td></tr>
+      <tr><th>Nature</th><td>Acrocorinth ridge hike with Gulf views</td></tr>
+      <tr><th>Tourism</th><td>Corinth Canal pedestrian bridge photo stop</td></tr>
+      <tr><th>Relaxation</th><td>Aegean Lounge at Athens Airport</td></tr>
+      <tr><th>History</th><td>Temple of Apollo ruins; Medieval walls of Acrocorinth</td></tr>
+      <tr><th>Shopping</th><td>ATH duty‑free: Korres skincare; Metaxa 12‑Star; Olive‑oil gift packs</td></tr>
+    </table>
+
+    <h3 class="subsection-title">Corinth & Return — 15 Flexible Ideas</h3>
+    <ol>
+      <li>Walk the old Corinth Canal bridge, watch bungee jumps</li>
+      <li>Hike Acrocorinth summit fortress walls</li>
+      <li>Tour Archaeological Museum of Ancient Corinth</li>
+      <li>Coffee on the Ancient Corinth village square</li>
+      <li>Snap submerged ruins at Kenchreai port (time-permitting)</li>
+      <li>Quick dip at Kalamaki beach before heading to ATH</li>
+      <li>Visit Isthmia site & small museum (Temple of Poseidon)</li>
+      <li>Loukoumades + Greek coffee at canal-side café</li>
+      <li>Last-minute olive-wood souvenirs in Corinth market</li>
+      <li>Inspect Diolkos ancient ship trackway stones</li>
+      <li>Duty-free haul: Korres, Mastika, Metaxa 12-Star</li>
+      <li>Shower & relax in Aegean Business Lounge (ATH)</li>
+      <li>Plane-spot from Skybridge observation windows</li>
+      <li>Grab spanakopita from <em>Gregory’s</em> in departures hall</li>
+      <li>Mail final postcards at airport Hellenic Post counter</li>
+    </ol>
+  </section>
+
+  <p class="general-note">
+    Use your free time blocks to mix and match from these activity pools according to energy and weather—no hard commitments are required. Pick and mix these ideas with your free blocks—plenty of slack to adapt on the fly.
+  </p>
+
+  <script>
+    const tabs = document.querySelectorAll('#tabs li');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        if (tab.classList.contains('active')) {
+          return;
+        }
+        
+        const target = tab.dataset.tab;
+
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        contents.forEach(c => {
+          if (c.id === target) {
+            c.classList.add('active');
+          } else {
+            c.classList.remove('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
